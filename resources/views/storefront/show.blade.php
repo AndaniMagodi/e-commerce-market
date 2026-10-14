@@ -1,5 +1,5 @@
 @extends('layouts.shop')
-@section('title', $product->name.' | Afrimart')
+@section('title', $product->name.' | E-Commerce Market')
 @section('content')<div class="container detail-container">
 <a class="breadcrumb" href="{{ route('storefront.index') }}#collection">← Back to products</a>
 <div class="product-detail">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Admin Login | Afrimart</title>
+<title>Admin Login | E-Commerce Market</title>
 <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body class="login-body">
@@ -15,7 +15,7 @@
 <h1>A thoughtful store.<br>A simple workspace.</h1>
 <p>Keep your catalogue fresh and your next everyday essential ready to discover.</p>
 </div>
-<small>Afrimart · Store management</small>
+<small>E-Commerce Market · Store management</small>
 </section>
 <section class="login-form-panel">
 <a class="breadcrumb" href="{{ route('storefront.index') }}">← Back to shop</a>

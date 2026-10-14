@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#173e36">
-<title>@yield('title', 'Afrimart | Everyday essentials')</title>
+<title>@yield('title', 'E-Commerce Market | Everyday essentials')</title>
 <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 <script src="{{ asset('js/app.js') }}" defer>
 </script>
@@ -36,7 +36,7 @@
 <div class="container footer-row">
 <x-brand/>
 <p>Everyday essentials. New possibilities.</p>
-<span>Assessment project · Andani Magodi</span>
+<span>Demo catalogue · Andani Magodi · <a href="{{ route('image-credits') }}">Photo credits</a></span>
 </div>
 </footer>
 </body>

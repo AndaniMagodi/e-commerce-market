@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [StorefrontController::class, 'index'])
     ->name('storefront.index');
 
+Route::view('/image-credits', 'image-credits')->name('image-credits');
+
 Route::get('/products/{product}', [StorefrontController::class, 'show'])
     ->name('storefront.show');
 

@@ -15,7 +15,7 @@
 <div class="hero-art">
 <div class="art-circle">
 </div>
-<img src="{{ asset('images/hero.svg') }}" alt="Illustration of a desk lamp, headphones and an electric kettle">
+<img src="{{ asset('images/photos/hero.jpg') }}" alt="Photograph of a desk with a lamp, headphones and a laptop">
 <span class="art-label label-top">THE EVERYDAY EDIT</span>
 <span class="art-label label-bottom">Useful by design.</span>
 </div>

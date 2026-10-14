@@ -1,0 +1,75 @@
+[
+  {
+    "slug": "cordless-drill",
+    "author": "Ksenia Chernaya",
+    "source": "https://www.pexels.com/photo/crop-man-holding-drill-in-hand-5691663/",
+    "download": "https://images.pexels.com/photos/5691663/pexels-photo-5691663.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/"
+  },
+  {
+    "slug": "tool-kit",
+    "author": "Ivan S",
+    "source": "https://www.pexels.com/photo/black-and-silver-hand-tool-4491848/",
+    "download": "https://images.pexels.com/photos/4491848/pexels-photo-4491848.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/"
+  },
+  {
+    "slug": "bluetooth-speaker",
+    "author": "Anete Lusina",
+    "source": "https://www.pexels.com/photo/close-up-shot-of-a-speaker-4790274/",
+    "download": "https://images.pexels.com/photos/4790274/pexels-photo-4790274.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/"
+  },
+  {
+    "slug": "wireless-headphones",
+    "author": "Caleb Oquendo",
+    "source": "https://www.pexels.com/photo/black-headphones-on-white-surface-7772548/",
+    "download": "https://images.pexels.com/photos/7772548/pexels-photo-7772548.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/"
+  },
+  {
+    "slug": "electric-kettle",
+    "author": "Diana",
+    "source": "https://www.pexels.com/photo/white-kettle-1921673/",
+    "download": "https://images.pexels.com/photos/1921673/pexels-photo-1921673.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/"
+  },
+  {
+    "slug": "office-chair",
+    "author": "Mike Murray",
+    "source": "https://www.pexels.com/photo/photo-of-a-black-office-chair-in-an-office-6446321/",
+    "download": "https://images.pexels.com/photos/6446321/pexels-photo-6446321.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/"
+  },
+  {
+    "slug": "desk-lamp",
+    "author": "Kaboompics",
+    "source": "https://www.pexels.com/photo/white-desk-lamp-on-brown-wooden-stool-7193648/",
+    "download": "https://images.pexels.com/photos/7193648/pexels-photo-7193648.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/"
+  },
+  {
+    "slug": "hero",
+    "author": "Reinis Bambers",
+    "source": "https://www.pexels.com/photo/lamp-and-headphones-on-table-1212665/",
+    "download": "https://images.pexels.com/photos/1212665/pexels-photo-1212665.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/"
+  },
+  {
+    "slug": "air-fryer",
+    "author": "Djsgmnd",
+    "source": "https://commons.wikimedia.org/wiki/File:Airfryer.jpg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Airfryer.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Original file retained; displayed at a smaller size using CSS."
+  }
+]

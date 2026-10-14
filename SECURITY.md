@@ -6,7 +6,7 @@ Eloquent queries bind search and form values. No user input is interpolated into
 
 ## XSS
 
-Blade `{{ }}` escapes product names, descriptions, category names, administrator names and search terms. Descriptions are plain text, not rich HTML. JavaScript does not inject product text with innerHTML. Tests submit script and event-handler text and verify escaped rendering. Trusted local illustrations are separate from uploaded content.
+Blade `{{ }}` escapes product names, descriptions, category names, administrator names and search terms. Descriptions are plain text, not rich HTML. JavaScript does not inject product text with innerHTML. Tests submit script and event-handler text and verify escaped rendering. Licensed local catalogue photos are separate from uploaded content.
 
 ## CSRF and sessions
 
@@ -26,7 +26,7 @@ Product validation requires a bounded name and description, an existing category
 
 ## Image uploads
 
-Uploads require decoded-image validation, JPEG/PNG/WebP MIME types and matching permitted filename extensions. Maximum size is 2 MB and dimensions are limited to 3000 by 3000. SVG, PHP and other active formats are rejected. GD decodes the raster and re-encodes a new WebP, discarding the original byte stream and metadata. Paths use generated UUIDs. Files live on Laravel's public storage disk, outside the application public directory, with a storage symlink. Production web servers must not execute uploaded files and should use correct MIME handling and nosniff headers. On database save failure, a newly stored image is removed; replaced/deleted product images are cleaned after database success. Cleanup only targets generated products/ paths, preserving shared seed illustrations. Storage cleanup failures remain an operational maintenance concern; file storage and SQL do not form a distributed transaction.
+Uploads require decoded-image validation, JPEG/PNG/WebP MIME types and matching permitted filename extensions. Maximum size is 2 MB and dimensions are limited to 3000 by 3000. SVG, PHP and other active formats are rejected. GD decodes the raster and re-encodes a new WebP, discarding the original byte stream and metadata. Paths use generated UUIDs. Files live on Laravel's public storage disk, outside the application public directory, with a storage symlink. Production web servers must not execute uploaded files and should use correct MIME handling and nosniff headers. On database save failure, a newly stored image is removed; replaced/deleted product images are cleaned after database success. Cleanup only targets generated products/ paths, preserving shared seed photos. Storage cleanup failures remain an operational maintenance concern; file storage and SQL do not form a distributed transaction.
 
 ## Credentials and environment
 

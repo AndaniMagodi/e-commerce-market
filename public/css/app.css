@@ -1237,3 +1237,24 @@ textarea {
     max-height: 180px;
     object-fit: contain;
 }
+/* E-Commerce Market branding and locally sourced photography */
+.brand { font-size: 22px; letter-spacing: -.8px; }
+.brand > span { white-space: nowrap; }
+.sidebar .brand { font-size: 15px; gap: 7px; letter-spacing: -.5px; }
+.sidebar .brand svg { flex-shrink: 0; width: 30px; height: 30px; }
+.hero-art > img { width: 86%; height: 300px; object-fit: cover; border-radius: 12px; transform: rotate(-3deg); }
+.product-image > img { object-fit: cover; }
+.detail-image img { border-radius: 12px; }
+.credits-list { padding-left: 18px; }
+.credits-list li { padding: 9px 0; font-size: 13px; }
+.credits-list a { text-decoration: underline; }
+@media(max-width:700px) {
+    .brand { font-size: 18px; }
+    .hero-art > img { height: 210px; }
+    .sidebar .brand { font-size: 20px; }
+    .login-intro .brand { font-size: 21px; }
+}
+.product-image img[src*="wireless-headphones"],
+.product-image img[src*="air-fryer"] {
+    object-fit: contain;
+}

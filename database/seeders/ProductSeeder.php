@@ -41,8 +41,8 @@ class ProductSeeder extends Seeder
 
             foreach ($products as [$name, $description, $price, $quantity]) {
                 $slug = Str::slug($name);
-                $imagePath = 'demo/'.$slug.'.svg';
-                Storage::disk('public')->put($imagePath, file_get_contents(public_path('images/'.$slug.'.svg')));
+                $imagePath = 'demo/'.$slug.'.jpg';
+                Storage::disk('public')->put($imagePath, file_get_contents(public_path('images/photos/'.$slug.'.jpg')));
                 $product = Product::firstOrCreate(
                     ['name' => $name],
                     [
@@ -54,7 +54,7 @@ class ProductSeeder extends Seeder
                         'image_path' => $imagePath,
                     ]
                 );
-                if ($product->image_path === null) {
+                if ($product->image_path === null || $product->image_path === 'demo/'.$slug.'.svg') {
                     $product->update(['image_path' => $imagePath]);
                 }
             }
