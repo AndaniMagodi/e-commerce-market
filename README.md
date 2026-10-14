@@ -6,20 +6,31 @@ The initial product/data flow was built step by step by Andani. AI assistance wa
 
 ## Requirements
 
-- PHP 8.3+ compatible with the committed Composer lock (developed with PHP 8.5)
+- PHP 8.4.1+ for the committed Composer lock (developed with PHP 8.5)
 - Composer 2
 - MySQL 8, an empty database and a database account with permissions for migrations
-- PHP extensions required by Laravel, plus PDO MySQL, GD with WebP support, and Fileinfo
+- PHP extensions required by Laravel, plus PDO MySQL, GD with WebP support, and Fileinfo. Tests also need PDO SQLite and SQLite3
 
 No Node build is needed: this small application serves its own CSS/JavaScript from `public`. Fonts optionally load from Google Fonts, with system fallbacks. Real catalogue photographs are stored locally with sources and licenses in IMAGE_CREDITS.md and the public photo-credits page; uploaded images are raster images re-encoded as WebP.
 
 ## Install
+
+Clone the repository and enter its directory first (repository access is required):
+
+```sh
+git clone https://github.com/AndaniMagodi/e-commerce-market.git
+cd e-commerce-market
+```
+
+Check the PHP selected by your terminal with `php -v`. Then install:
 
 ```sh
 composer install
 cp .env.example .env
 php artisan key:generate
 ```
+
+On Windows Command Prompt, use `copy .env.example .env` instead of `cp`.
 
 Create a dedicated MySQL database and application user using your database management tool. Set these values in your local `.env` (supply your own credentials):
 
@@ -47,7 +58,13 @@ php artisan serve --host=127.0.0.1 --port=8000
 
 The administrator command asks for name, email and a password with hidden input. It requires at least 12 characters and a matching confirmation. No default administrator password is committed. Use this command to create a reviewer account locally or provide credentials separately through an agreed private channel.
 
+The terminal running `artisan serve` must stay open. Open `http://127.0.0.1:8000` in your browser.
+
 Open `/` for the shop, `/login` for login and `/admin` for the dashboard. Product management is `/admin/products`.
+
+`app:create-admin` creates a new account; it is not a password-reset command. Do not commit `.env` or put passwords in the README.
+
+The manual steps above are the recommended first install: they let you configure MySQL before migrations. The optional `composer setup` helper does not run npm; it still needs your database configured before it reaches migrations.
 
 ## Features and decisions
 
