@@ -104,4 +104,30 @@ Screenshots are in `screenshots/`. Desktop storefront, dashboard and product-man
 
 ## Deployment notes
 
-Serve only Laravel's `public` directory. Use HTTPS, `APP_DEBUG=false`, secure session cookies, protected credentials and non-executable upload storage. Back up MySQL and uploaded files together. This assessment has not been deployed publicly; GitHub publishing and the submission email remain separate steps.
+Serve only Laravel's `public` directory. Use HTTPS, `APP_DEBUG=false`, secure session cookies, protected credentials and non-executable upload storage. Back up MySQL and uploaded files together. This assessment has not been deployed publicly. Source is in the private repository https://github.com/AndaniMagodi/e-commerce-market . Reviewers need repository invitations before they can open the source link. The submission email remains a separate step.
+
+
+## Assessment requirement check - 14 October 2026
+
+| Requirement | Status and evidence |
+| --- | --- |
+| Logo, search and navigation | Implemented in the shared storefront header |
+| Promotional banner | Implemented on the homepage with a local photograph |
+| Categories and at least eight database products | Four seeded categories and eight products; data queried through Eloquent |
+| Product image, name, price and availability | Displayed in cards, with local licensed photos |
+| Individual product details | Dedicated route/view; hidden and missing products return 404 |
+| Functional search | Name/description search; search and category filtering tested |
+| Responsive/mobile-friendly design | CSS breakpoints implemented; desktop inspected; final phone-size visual review still pending |
+| Admin email/password login and logout | Implemented and tested; sessions regenerated/invalidated |
+| Admin-only access | All admin routes use auth and admin middleware; non-admin rejection tested |
+| Four dashboard statistics | Product, active, zero-stock and category counts implemented |
+| Product add/edit/delete | Implemented and tested |
+| Images, price, category, quantity and availability updates | Implemented; upload replacement and stock/publication validation tested |
+| Admin changes reflected on storefront | Same database queried on every new page request; created products verified through public detail requests |
+| MySQL and migrations | Running application uses MySQL; users/products/categories and foreign key migrations included |
+| SQL injection/XSS/CSRF defenses | Bound queries, escaped Blade output and web CSRF middleware; escaped output tested and live missing-token POST returns 419 |
+| Hashing, validation, safe uploads, route authorization and credential handling | Implemented and explained in SECURITY.md; tests cover key boundaries; local secrets excluded from Git |
+| GitHub source link | Private repository created; reviewer access still needs invitations |
+| README, screenshots, working app and security explanation | Included; screenshots under screenshots/; app running locally |
+| Final technical demonstration | Demo sequence and the demo sequence above prepared; candidate rehearsal remains |
+| Submission by 16 October 2026, 10:00 | Not sent; applicant must review and submit before deadline |
