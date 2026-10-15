@@ -146,5 +146,5 @@ Serve only Laravel's `public` directory. Use HTTPS, `APP_DEBUG=false`, secure se
 | Hashing, validation, safe uploads, route authorization and credential handling | Implemented and explained in SECURITY.md; tests cover key boundaries; local secrets excluded from Git |
 | GitHub source link | Private repository created; reviewer access still needs invitations |
 | README, screenshots, working app and security explanation | Included; screenshots under screenshots/; app running locally |
-| Final technical demonstration | Demo sequence and the demo sequence above prepared; candidate rehearsal remains |
+| Final technical demonstration | Demo sequence above; candidate rehearsal remains |
 | Submission by 16 October 2026, 10:00 | Not sent; applicant must review and submit before deadline |
