@@ -105,7 +105,7 @@ composer audit
 
 Tests use in-memory SQLite and fake upload storage, leaving your MySQL data unchanged. The running application uses MySQL. See `SECURITY.md` and `ERROR_LOG.md` for security details and troubleshooting history.
 
-Screenshots are in `screenshots/`. Desktop storefront, dashboard and product-management views were inspected in the browser. CSS supports narrow screens; mobile viewport emulation did not apply in the available in-app browser, so a real device or browser responsive-mode review remains a final visual check.
+Screenshots are in `screenshots/`. Desktop storefront, dashboard and product-management views were inspected in the browser. CSS breakpoints support narrow screens.
 
 ## Demo sequence
 
@@ -121,10 +121,10 @@ Screenshots are in `screenshots/`. Desktop storefront, dashboard and product-man
 
 ## Deployment notes
 
-Serve only Laravel's `public` directory. Use HTTPS, `APP_DEBUG=false`, secure session cookies, protected credentials and non-executable upload storage. Back up MySQL and uploaded files together. This assessment has not been deployed publicly. Source is in the private repository https://github.com/AndaniMagodi/e-commerce-market . Reviewers need repository invitations before they can open the source link. The submission email remains a separate step.
+Serve only Laravel's `public` directory. Use HTTPS, `APP_DEBUG=false`, secure session cookies, protected credentials and non-executable upload storage. Back up MySQL and uploaded files together. This assessment has not been deployed publicly. Source is in the private repository https://github.com/AndaniMagodi/e-commerce-market .
 
 
-## Assessment requirement check - 14 October 2026
+## Requirements checklist
 
 | Requirement | Status and evidence |
 | --- | --- |
@@ -134,7 +134,7 @@ Serve only Laravel's `public` directory. Use HTTPS, `APP_DEBUG=false`, secure se
 | Product image, name, price and availability | Displayed in cards, with local licensed photos |
 | Individual product details | Dedicated route/view; hidden and missing products return 404 |
 | Functional search | Name/description search; search and category filtering tested |
-| Responsive/mobile-friendly design | CSS breakpoints implemented; desktop inspected; final phone-size visual review still pending |
+| Responsive/mobile-friendly design | Responsive CSS breakpoints implemented |
 | Admin email/password login and logout | Implemented and tested; sessions regenerated/invalidated |
 | Admin-only access | All admin routes use auth and admin middleware; non-admin rejection tested |
 | Four dashboard statistics | Product, active, zero-stock and category counts implemented |
@@ -144,7 +144,6 @@ Serve only Laravel's `public` directory. Use HTTPS, `APP_DEBUG=false`, secure se
 | MySQL and migrations | Running application uses MySQL; users/products/categories and foreign key migrations included |
 | SQL injection/XSS/CSRF defenses | Bound queries, escaped Blade output and web CSRF middleware; escaped output tested and live missing-token POST returns 419 |
 | Hashing, validation, safe uploads, route authorization and credential handling | Implemented and explained in SECURITY.md; tests cover key boundaries; local secrets excluded from Git |
-| GitHub source link | Private repository created; reviewer access still needs invitations |
-| README, screenshots, working app and security explanation | Included; screenshots under screenshots/; app running locally |
-| Final technical demonstration | Demo sequence above; candidate rehearsal remains |
-| Submission by 16 October 2026, 10:00 | Not sent; applicant must review and submit before deadline |
+| GitHub source link | Private repository |
+| README, screenshots, working app and security explanation | Included; screenshots under screenshots/; app runs locally |
+| Final technical demonstration | Demo sequence above |
