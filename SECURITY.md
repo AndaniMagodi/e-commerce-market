@@ -32,6 +32,10 @@ Uploads require decoded-image validation, JPEG/PNG/WebP MIME types and matching 
 
 .env is ignored by Git. .env.example contains placeholders, not local credentials. The dedicated local database only listens on loopback and its application user is restricted to the assessment database. Private database files are outside this repository. The admin setup command uses hidden password prompts. Never include credentials, session cookies or full exception dumps in submission documentation.
 
+## Response headers
+
+A small middleware (`SecurityHeaders`) adds `X-Content-Type-Options: nosniff`, `X-Frame-Options: DENY`, a restrictive `Referrer-Policy` and `Permissions-Policy` to every web response. This blocks MIME sniffing of uploaded files, clickjacking of the admin forms and unnecessary browser feature access. A Content-Security-Policy is a sensible next step but was left out to avoid breaking the Google Fonts import without full browser testing.
+
 ## Verification and limits
 
 Tests exercise authorization, CRUD persistence, file replacement/deletion, invalid values, disallowed/oversized uploads, escaped output, hidden products, login/logout and throttling. Composer audit was clean during implementation. These checks support the implementation; they are not a penetration-test certification. Debug mode is appropriate locally but must be disabled before public deployment. HTTPS and web-server configuration are deployment responsibilities.
