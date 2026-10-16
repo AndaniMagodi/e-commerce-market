@@ -1260,3 +1260,4 @@ textarea {
 .product-image img[src*="air-fryer"] {
     object-fit: contain;
 }
+.sidebar .brand { font-size: 15px !important; } .sidebar .brand > span { white-space: normal; }
